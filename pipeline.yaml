@@ -40,7 +40,7 @@ spec:
         - name: source
           workspace: pipeline-workspace
       taskRef:
-        name: npm # Fixed: aligned 'name' correctly under taskRef
+        name: npm 
       runAfter:
         - clone
 
@@ -57,7 +57,6 @@ spec:
       workspaces:
         - name: source
           workspace: pipeline-workspace
-        # Note: You might need to add your dockerconfig-ws here if buildah needs to push
       taskRef:
         name: buildah
         kind: ClusterTask
